@@ -43,6 +43,10 @@
   }
   
   /* Main Content Section */
+  p center {
+    display: block; /* Ensure the elements are block-level */
+    margin-bottom: 100px; /* Adjust the space between elements */
+  }
   .content {
     background-image: url('/assets/img/water-5245722_1280.jpg');
     background-size: cover;
@@ -85,6 +89,17 @@
     padding: 20px;
     border-radius: 5px;
     margin-top: 20px;
+  }
+
+  .box-around {
+    background-color: #268bf1;
+    padding: 20px;
+    border-radius: 5px;
+    justify-self: center;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+    box-sizing: border-box;
   }
   
   /* Responsive Design for Smaller Screens */
