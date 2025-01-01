@@ -43,6 +43,11 @@
   }
   
   /* Main Content Section */
+  h2 {
+    color: aliceblue;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
   p center {
     display: block; /* Ensure the elements are block-level */
     margin-bottom: 100px; /* Adjust the space between elements */
@@ -53,6 +58,13 @@
     background-position: center;
     padding: 20px 20px;
     min-height: 100vh; /* Ensures the section is at least the height of the viewport */
+  }
+  p {
+
+    color: #070707;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder;
   }
   
   .article-boxes {
