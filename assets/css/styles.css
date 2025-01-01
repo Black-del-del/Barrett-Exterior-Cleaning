@@ -1,0 +1,115 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #268bf1;
+    color: rgb(6, 6, 6);
+  }
+  
+  header .logo img {
+    height: 100px;
+    width: auto;
+  }
+  
+  header .header-text h1 {
+    font-size: 80px;
+  }
+  
+  header .header-buttons button {
+    background-color: #090909;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  
+  header .header-buttons button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Main Content Section */
+  .content {
+    background-image: url('/assets/img/water-5245722_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px;
+    min-height: 100vh; /* Ensures the section is at least the height of the viewport */
+  }
+  
+  .article-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+  }
+  
+  .article-box {
+    background-color: #268bf1;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  height: 220px; /* Set a fixed height */
+  width: 80%; /* Ensure it takes the full width of the grid column */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  overflow: hidden; /* Hide any overflowing content */
+  }
+  
+  
+  .article-box h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .article-box img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .form-box {
+    background-color: #268bf1;
+    justify-content: left;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .article-boxes {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .article-boxes {
+      grid-template-columns: 1fr;
+    }
+  
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    header .header-text {
+      margin-top: 10px;
+    }
+  
+    header .header-buttons {
+      margin-top: 10px;
+    }
+  }
+  
