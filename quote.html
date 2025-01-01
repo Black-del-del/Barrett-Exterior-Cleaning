@@ -26,48 +26,58 @@
         <button onclick="location.href='index.html'">Home</button>
       </div>
     </header>
-    <section class="content">
-    <div class="container">
-        <div class="article-box">
-              <h2>Get a Free Quote</h2>
-                  
-        <form action="https://api.web3forms.com/submit" method="POST">
 
-            <!-- Replace with your Access Key -->
-            <input type="hidden" name="access_key" value="5f2b26e7-9922-4f66-a1e1-4bf3a03800e6">
+    <section class="content">
         
-            <!-- Form Inputs. Each input must have a name="" attribute -->
-            <div class="form-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="address">Address:</label>
-                <input type="text" id="address" name="address" required>
-            </div>
-            <div class="form-group">
-                <label for="city">City:</label>
-                <input type="text" id="city" name="city" required>
-            </div>
-            <div class="form-group">
-                <label for="state">State:</label>
-                <input type="text" id="state" name="state" required>
-            </div>
-            <div class="form-group">
-                <label for="zipcode">Zip Code:</label>
-                <input type="text" id="zipcode" name="zipcode" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit">Submit</button>
-            </div>
+        <div class="form-container">
+            <h2>Get a Free Quote</h2><br>
+            <p>Fill out the form below to get a free quote for your project. We will get back to you as soon as possible.</p> <br><br>
+              <form action="https://api.web3forms.com/submit" method="POST">
+
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="5f2b26e7-9922-4f66-a1e1-4bf3a03800e6">
+                
+                <!-- Form Inputs. Each input must have a name="" attribute -->
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="location">Location of Work</label>
+                    <input type="text" id="location" name="location" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="type_of_work">Type of Work</label>
+                    <select id="type_of_work" name="type_of_work" required>
+                      <option value="house">House</option>
+                      <option value="roof">Roof</option>
+                      <option value="deck">Deck</option>
+                      <option value="driveway">Driveway</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="Addition information">Additional Information</label>
+                    <input type="text" id="additional information" name="information" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <button type="submit">Submit</button>
+                  </div>
+                
         
             <!-- Honeypot Spam Protection -->
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
@@ -77,5 +87,7 @@
                    
     
         </form>
-        </div>
     </div>
+  
+  </body>
+  </html>
