@@ -130,10 +130,6 @@
     font-size: 16px;
   }
   
-  .form-group input[type="tel"], .form-group input[type="email"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
   
   .form-group button {
     width: 100%;
