@@ -44,10 +44,16 @@
   
   /* Main Content Section */
   h2 {
-    color: aliceblue;
-    font-size: 40px;
+    color: rgb(4, 4, 4);
+    font-size: 25px;
     margin-bottom: 20px;
   }
+  h3 {
+    color: rgb(1, 2, 2);
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
   p center {
     display: block; /* Ensure the elements are block-level */
     margin-bottom: 100px; /* Adjust the space between elements */
@@ -83,13 +89,15 @@
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   overflow: hidden; /* Hide any overflowing content */
   }
+  .article-box2 {
+    background-color: #f0f4f7; /* Change this to your desired background color */
+    padding: 20px; /* Add some padding for better spacing */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    margin-bottom: 20px; /* Add some margin at the bottom */
+}
   
-  
-  .article-box h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-  
+ 
   .article-box img {
     max-width: 80%;
     height: auto;
@@ -155,6 +163,15 @@
     align-items: center;
     margin-top: 20px;
     box-sizing: border-box;
+  }
+  .footer-text {
+    background-color: #268bf1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
   
   /* Responsive Design for Smaller Screens */
